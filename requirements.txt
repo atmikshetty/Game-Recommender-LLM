@@ -5,3 +5,13 @@ matplotlib
 seaborn
 plotly
 nltk
+google-generativeai
+langchain
+streamlit
+langchain-google-genai
+langchain-community
+langchain-chroma
+sklearn
+angchain-community 
+faiss-cpu 
+tiktoken

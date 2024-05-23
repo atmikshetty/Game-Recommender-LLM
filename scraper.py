@@ -2,13 +2,13 @@ from google_play_scraper import search
 import csv
 import json
 
+# Searched for Free, Best, Grossing and Paid
 results = search(
     "Best games of 2023-2024",
     lang="en",
     country="us",
     n_hits=30  # max limit
 )
-# print(results)
 
 def extract_req_info(game):
     return {
@@ -22,9 +22,6 @@ def extract_req_info(game):
     }
 
 extracted_info = [extract_req_info(game) for game in results]
-
-# for info in extracted_info:
-#     print(json.dumps(info, indent=7))
 
 file = 'best_games.csv'
 headers = ['name', 'package_name', 'description', 'icon_url', 'genre', 'rating', 'ratings']
