@@ -1,1 +1,7 @@
 google-play-scraper
+pandas 
+numpy
+matplotlib
+seaborn
+plotly
+nltk
